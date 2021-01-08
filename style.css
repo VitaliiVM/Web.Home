@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat+Subrayada&family=Nunito+Sans&display=swap');
+
+
+* {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+background-color: #ffffff;
+}
+
+.container1 {
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container1 img {
+    width: 50px;
+    height: 50px;
+}
+
+.container1 ul {
+    list-style: none;
+    
+}
+
+.container1 li {
+    display: inline;
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+line-height: 24px;
+font-weight: 500;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+margin-left: 10px;
+}
+
+.first {
+    width: 100%;
+    height: 315px;
+    background-color: rgba(224, 222, 222, 0.438);
+}
+
+.container2 {
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 h4 {
+    font-size: 38px;
+line-height: 84px;
+font-family: 'Nunito Sans', sans-serif;
+font-weight: 500;
+letter-spacing: 0.01em;
+color: #171717;
+}
+
+.container2 p {
+
+font-size: 18px;
+font-family: 'Nunito Sans', sans-serif;
+line-height: 28px;
+font-weight: 400;
+letter-spacing: 0.005em;
+color: #787878;
+text-align: center;
+}
+
+.second {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box1 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+
+.box1 img {
+    width: 25%;
+    height: 100%;
+}
+
+
+.footer {
+    width: 100%;
+    height: 284px;
+background-color: #141414;
+}
+
+.box9 {
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box9 ul {
+    font-family: NunitoSans;
+font-size: 18px;
+line-height: 24px;
+font-weight: 400;
+font-family: 'Nunito Sans', sans-serif;
+letter-spacing: 0.005em;
+color: #bcbcbc;
+list-style: none;
+}
+
+#mrg {
+    margin-left: 260px;
+}
+
+#forleft {
+    margin-left: 100px;
+}
+
+#forright {
+    margin-right: 70px;
+}
+
+#firstmrg {
+    margin-right: 90px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.692);
+    
+}
+
+
+
+.modal-content {
+    background-color: rgb(58, 58, 58);
+    margin: 15% auto;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.close {
+    color: blue;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#firstim:hover {
+    background-color:  #25d8d2;
+}
+
+#myBtn {
+    width: 200px;
+    height: 50px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.062);
+    border: 2px solid rgba(245, 245, 245, 0.705);
+    color: rgba(255, 255, 255, 0.808);
+    outline: none;
+}
+
+#myBtn:hover {
+background-color:  rgba(0, 0, 0, 0.452);
+border: none;
+outline: none;
+
+}
+
+.mario {
+    width: 100%;
+    height: 150px;
+    background-color:  #10c9c3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Mario*/
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid greenyellow;
+    margin: auto;
+}
+
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(https://pngimg.com/uploads/mario/mario_PNG111.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+#cactus {
+    width: 40px;
+    height: 30px;
+    background: url(https://vignette.wikia.nocookie.net/super-mario/images/a/a6/Super_Mushroom_Artwork_-_Super_Mario_3D_World.png/revision/latest?cb=20190502175337&path-prefix=ru);
+    background-size: 100%;
+    position: relative;
+    top: 118px;
+    left: 580px;
+    animation: cactusMove 2s infinite linear;
+
+}
+
+@keyframes cactusMove {
+    0%{
+      left: 580px;  
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 0.3s linear; 
+}
+
+@keyframes jump {
+    0%{
+      top: 150px;  
+    }
+    30%{
+       top: 130px; 
+    }
+    50%{
+        top: 80px;
+    }
+    80%{
+        top: 130px;
+    }
+    100% {
+        top: 150px;
+    }
+}
